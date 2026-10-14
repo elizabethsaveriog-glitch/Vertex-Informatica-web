@@ -1,0 +1,145 @@
+/* Diseño general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f5fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #172b53;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Menu */
+nav {
+    background-color: #4263f5;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 35px 8%;
+    text-align: center;
+}
+
+h2 {
+    color: #172b53;
+}
+
+.inicio {
+    background-color: #dce7ff;
+    padding: 50px 20px;
+}
+
+.fondo-claro {
+    background-color: #e6edfc;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    background-color: #4263f5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+/* Tarjetas */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #ccc;
+}
+
+.tarjeta h3 {
+    color: #4263f5;
+}
+
+/* Imagen */
+img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+/* Formulario */
+form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4263f5;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pie de pagina */
+footer {
+    background-color: #172b53;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Adaptacion a celulares */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 80%;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+}

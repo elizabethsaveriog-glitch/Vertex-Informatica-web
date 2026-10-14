@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertex Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Vertex Informática</h1>
+    <p>Soluciones tecnológicas para tu día a día</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#multimedia">Multimedia</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+
+<section id="inicio" class="inicio">
+    <h2>Bienvenidos a Vertex Informática</h2>
+    <p>Ofrecemos soluciones tecnológicas para estudiantes,
+    hogares y empresas.</p>
+    <a class="boton" href="#servicios">Ver servicios</a>
+</section>
+
+<section id="nosotros">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos una empresa dedicada a la tecnología y al soporte
+    informático.</p>
+
+    <div class="contenedor">
+        <div class="tarjeta">
+            <h3>Misión</h3>
+            <p>Brindar soluciones tecnológicas útiles y de calidad.</p>
+        </div>
+        <div class="tarjeta">
+            <h3>Visión</h3>
+            <p>Ser reconocidos por nuestro servicio e innovación.</p>
+        </div>
+        <div class="tarjeta">
+            <h3>Objetivo</h3>
+            <p>Facilitar el uso de la tecnología y cuidar los equipos.</p>
+        </div>
+    </div>
+</section>
+
+<section id="servicios" class="fondo-claro">
+    <h2>Nuestros servicios</h2>
+
+    <div class="contenedor">
+        <div class="tarjeta">
+            <h3>Soporte técnico</h3>
+            <p>Solución de problemas informáticos.</p>
+        </div>
+        <div class="tarjeta">
+            <h3>Mantenimiento</h3>
+            <p>Limpieza y revisión de computadoras.</p>
+        </div>
+        <div class="tarjeta">
+            <h3>Redes</h3>
+            <p>Instalación y configuración de conexiones.</p>
+        </div>
+        <div class="tarjeta">
+            <h3>Software</h3>
+            <p>Instalación y actualización de programas.</p>
+        </div>
+        <div class="tarjeta">
+            <h3>Seguridad digital</h3>
+            <p>Consejos para proteger archivos y contraseñas.</p>
+        </div>
+        <div class="tarjeta">
+            <h3>Asesoría</h3>
+            <p>Orientación sobre herramientas tecnológicas.</p>
+        </div>
+    </div>
+</section>
+
+<section id="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>Nos caracterizamos por:</p>
+    <p>✔ Responsabilidad y compromiso</p>
+    <p>✔ Soluciones prácticas</p>
+    <p>✔ Atención a las necesidades del cliente</p>
+    <p>✔ Innovación tecnológica</p>
+</section>
+
+<section id="multimedia" class="fondo-claro">
+    <h2>Multimedia</h2>
+    <p>La tecnología facilita la comunicación, el estudio y el trabajo.</p>
+
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+         alt="Componentes tecnológicos">
+
+    <p>
+        <a class="boton"
+           href="https://www.youtube.com/results?search_query=tecnologia+informatica"
+           target="_blank" rel="noopener noreferrer">
+            Ver videos de tecnología
+        </a>
+    </p>
+</section>
+
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Completa el formulario para realizar una consulta.</p>
+
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+        <p id="respuesta"></p>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <h3>Vertex Informática</h3>
+    <p>Innovación y tecnología para todos.</p>
+    <p>© 2026 Vertex Informática</p>
+</footer>
+
+<script>
+    document.getElementById("formulario").addEventListener("submit", function(e) {
+        e.preventDefault();
+        document.getElementById("respuesta").textContent =
+            "¡Gracias! El formulario se completó correctamente.";
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
